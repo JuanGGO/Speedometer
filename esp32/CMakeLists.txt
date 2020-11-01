@@ -13,6 +13,8 @@ set(CMAKE_CXX_COMPILER_WORKS 1)
 project("esp32" C CXX)
 
 include(CMakeListsPrivate.txt)
+include_directories(/home/juan/Programs/Arduino/Arduino-IRremote/src)
+
 
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/CMakeListsUser.txt)
 include(CMakeListsUser.txt)
