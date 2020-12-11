@@ -39,8 +39,7 @@ void loop()
         serialbt = SerialBT.available();
         speed = CalculateSpeed(radius, timeAfter, timeBefore);
         memcpy(speedBin, &speed, sizeof(float));
-        for(int i = 0; i < sizeof(float); i++)
-            Serial.println(speedBin[i], BIN);
+        for(int i = 0; i < sizeof(float); i++iprintln(speedBin[i], BIN);
         SerialBT.write(speedBin, sizeof(float));
         digitalWrite(ledPin, HIGH);
     }
